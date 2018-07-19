@@ -80,9 +80,13 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/gts3llte/proprietary/framework/izat.xt.srv.jar:system/framework/izat.xt.srv.jar \
     vendor/samsung/gts3llte/proprietary/lib/libaptX_encoder.so:system/lib/libaptX_encoder.so \
     vendor/samsung/gts3llte/proprietary/lib/libaptXHD_encoder.so:system/lib/libaptXHD_encoder.so \
+    vendor/samsung/gts3llte/proprietary/lib/libkeymaster_messages.so:system/lib/libkeymaster_messages.so \
+    vendor/samsung/gts3llte/proprietary/lib/libkeymaster1.so:system/lib/libkeymaster1.so \
     vendor/samsung/gts3llte/proprietary/lib/libsd_sdk_display.so:system/lib/libsd_sdk_display.so \
     vendor/samsung/gts3llte/proprietary/lib/libsdm-disp-apis.so:system/lib/libsdm-disp-apis.so \
     vendor/samsung/gts3llte/proprietary/lib/libsecnativefeature.so:system/lib/libsecnativefeature.so \
+    vendor/samsung/gts3llte/proprietary/lib/libsoftkeymaster.so:system/lib/libsoftkeymaster.so \
+    vendor/samsung/gts3llte/proprietary/lib/libsoftkeymasterdevice.so:system/lib/libsoftkeymasterdevice.so \
     vendor/samsung/gts3llte/proprietary/lib/vendor.display.color@1.0.so:system/lib/vendor.display.color@1.0.so \
     vendor/samsung/gts3llte/proprietary/lib/vendor.display.postproc@1.0.so:system/lib/vendor.display.postproc@1.0.so \
     vendor/samsung/gts3llte/proprietary/lib/vendor.qti.hardware.iop@1.0.so:system/lib/vendor.qti.hardware.iop@1.0.so \
@@ -91,6 +95,8 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/gts3llte/proprietary/lib64/com.qualcomm.qti.imscmservice@1.0.so:system/lib64/com.qualcomm.qti.imscmservice@1.0.so \
     vendor/samsung/gts3llte/proprietary/lib64/libaptX_encoder.so:system/lib64/libaptX_encoder.so \
     vendor/samsung/gts3llte/proprietary/lib64/libaptXHD_encoder.so:system/lib64/libaptXHD_encoder.so \
+    vendor/samsung/gts3llte/proprietary/lib64/libkeymaster_messages.so:system/lib64/libkeymaster_messages.so \
+    vendor/samsung/gts3llte/proprietary/lib64/libkeymaster1.so:system/lib64/libkeymaster1.so \
     vendor/samsung/gts3llte/proprietary/lib64/libdiag_system.so:system/lib64/libdiag_system.so \
     vendor/samsung/gts3llte/proprietary/lib64/lib-imscamera.so:system/lib64/lib-imscamera.so \
     vendor/samsung/gts3llte/proprietary/lib64/libimscamera_jni.so:system/lib64/libimscamera_jni.so \
@@ -104,6 +110,8 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/gts3llte/proprietary/lib64/libsd_sdk_display.so:system/lib64/libsd_sdk_display.so \
     vendor/samsung/gts3llte/proprietary/lib64/libsdm-disp-apis.so:system/lib64/libsdm-disp-apis.so \
     vendor/samsung/gts3llte/proprietary/lib64/libsecnativefeature.so:system/lib64/libsecnativefeature.so \
+    vendor/samsung/gts3llte/proprietary/lib64/libsoftkeymaster.so:system/lib64/libsoftkeymaster.so \
+    vendor/samsung/gts3llte/proprietary/lib64/libsoftkeymasterdevice.so:system/lib64/libsoftkeymasterdevice.so \
     vendor/samsung/gts3llte/proprietary/lib64/libxt_native.so:system/lib64/libxt_native.so \
     vendor/samsung/gts3llte/proprietary/lib64/vendor.display.color@1.0.so:system/lib64/vendor.display.color@1.0.so \
     vendor/samsung/gts3llte/proprietary/lib64/vendor.display.postproc@1.0.so:system/lib64/vendor.display.postproc@1.0.so \
@@ -221,7 +229,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/gts3llte/proprietary/vendor/lib/hw/fingerprint.default.so:system/vendor/lib/hw/fingerprint.default.so \
     vendor/samsung/gts3llte/proprietary/vendor/lib/hw/fingerprint.vendor.msm8996.so:system/vendor/lib/hw/fingerprint.vendor.msm8996.so \
     vendor/samsung/gts3llte/proprietary/vendor/lib/hw/gatekeeper.mdfpp.so:system/vendor/lib/hw/gatekeeper.mdfpp.so \
-    vendor/samsung/gts3llte/proprietary/vendor/lib/hw/keystore.msm8996.so:system/vendor/lib/hw/keystore.msm8996.so \
     vendor/samsung/gts3llte/proprietary/vendor/lib/hw/vendor.qti.hardware.iop@1.0-impl.so:system/vendor/lib/hw/vendor.qti.hardware.iop@1.0-impl.so \
     vendor/samsung/gts3llte/proprietary/vendor/lib/hw/vulkan.msm8996.so:system/vendor/lib/hw/vulkan.msm8996.so \
     vendor/samsung/gts3llte/proprietary/vendor/lib/libacdb-fts.so:system/vendor/lib/libacdb-fts.so \
@@ -374,7 +381,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/gts3llte/proprietary/vendor/lib/libcneapiclient.so:system/vendor/lib/libcneapiclient.so \
     vendor/samsung/gts3llte/proprietary/vendor/lib/libcneoplookup.so:system/vendor/lib/libcneoplookup.so \
     vendor/samsung/gts3llte/proprietary/vendor/lib/libcneqmiutils.so:system/vendor/lib/libcneqmiutils.so \
-    vendor/samsung/gts3llte/proprietary/vendor/lib/libcppf.so:system/vendor/lib/libcppf.so \
     vendor/samsung/gts3llte/proprietary/vendor/lib/libdiag.so:system/vendor/lib/libdiag.so \
     vendor/samsung/gts3llte/proprietary/vendor/lib/libdisp-aba.so:system/vendor/lib/libdisp-aba.so \
     vendor/samsung/gts3llte/proprietary/vendor/lib/libdpmqmihal.so:system/vendor/lib/libdpmqmihal.so \
@@ -507,7 +513,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/gts3llte/proprietary/vendor/lib/libmorpho_hdr_checker.so:system/vendor/lib/libmorpho_hdr_checker.so \
     vendor/samsung/gts3llte/proprietary/vendor/lib/libmorpho_image_stab4.so:system/vendor/lib/libmorpho_image_stab4.so \
     vendor/samsung/gts3llte/proprietary/vendor/lib/libmpbase.so:system/vendor/lib/libmpbase.so \
-    vendor/samsung/gts3llte/proprietary/vendor/lib/liboemcrypto.so:system/vendor/lib/liboemcrypto.so \
     vendor/samsung/gts3llte/proprietary/vendor/lib/libOmxAacDec.so:system/vendor/lib/libOmxAacDec.so \
     vendor/samsung/gts3llte/proprietary/vendor/lib/libOmxAlacDec.so:system/vendor/lib/libOmxAlacDec.so \
     vendor/samsung/gts3llte/proprietary/vendor/lib/libOmxAlacDecSw.so:system/vendor/lib/libOmxAlacDecSw.so \
@@ -722,7 +727,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/gts3llte/proprietary/vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so:system/vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so \
     vendor/samsung/gts3llte/proprietary/vendor/lib64/hw/fingerprint.vendor.msm8996.so:system/vendor/lib64/hw/fingerprint.vendor.msm8996.so \
     vendor/samsung/gts3llte/proprietary/vendor/lib64/hw/gatekeeper.mdfpp.so:system/vendor/lib64/hw/gatekeeper.mdfpp.so \
-    vendor/samsung/gts3llte/proprietary/vendor/lib64/hw/keystore.msm8996.so:system/vendor/lib64/hw/keystore.msm8996.so \
     vendor/samsung/gts3llte/proprietary/vendor/lib64/hw/vendor.qti.gnss@1.0-impl.so:system/vendor/lib64/hw/vendor.qti.gnss@1.0-impl.so \
     vendor/samsung/gts3llte/proprietary/vendor/lib64/hw/vendor.qti.hardware.iop@1.0-impl.so:system/vendor/lib64/hw/vendor.qti.hardware.iop@1.0-impl.so \
     vendor/samsung/gts3llte/proprietary/vendor/lib64/hw/vulkan.msm8996.so:system/vendor/lib64/hw/vulkan.msm8996.so \
@@ -889,6 +893,11 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/gts3llte/proprietary/vendor/lib64/vendor.qti.imsrtpservice@1.0-service-Impl.so:system/vendor/lib64/vendor.qti.imsrtpservice@1.0-service-Impl.so \
     vendor/samsung/gts3llte/proprietary/vendor/lib64/vendor.samsung.hardware.biometrics.fingerprint@2.1.so:system/vendor/lib64/vendor.samsung.hardware.biometrics.fingerprint@2.1.so \
     vendor/samsung/gts3llte/proprietary/vendor/radio/qcril_database/qcril.db:system/vendor/radio/qcril_database/qcril.db
+
+# for drm L1 (dnw right now)
+#PRODUCT_COPY_FILES += \
+#    vendor/samsung/gts3llte/proprietary/vendor/lib/libcppf.so:system/vendor/lib/libcppf.so \
+#    vendor/samsung/gts3llte/proprietary/vendor/lib/liboemcrypto.so:system/vendor/lib/liboemcrypto.so
 
 PRODUCT_PACKAGES += \
     libgpustats \
