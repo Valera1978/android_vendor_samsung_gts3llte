@@ -870,6 +870,11 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/gts3llte/proprietary/vendor/lib64/vendor.qti.imsrtpservice@1.0-service-Impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.imsrtpservice@1.0-service-Impl.so \
     vendor/samsung/gts3llte/proprietary/vendor/radio/qcril_database/qcril.db:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/qcril.db
 
+# aptx
+PRODUCT_COPY_FILES += \
+    vendor/samsung/gts3llte/proprietary/product/lib64/libaptX_encoder.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libaptX_encoder.so \
+    vendor/samsung/gts3llte/proprietary/product/lib64/libaptXHD_encoder.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libaptXHD_encoder.so
+
 # workaround for android.hardware.bluetooth@1.0-impl-qti.so
 PRODUCT_COPY_FILES += \
     vendor/samsung/gts3llte/proprietary/vendor/lib64/libbas_.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbas_.so
